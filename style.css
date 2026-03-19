@@ -5,7 +5,7 @@
 
 :root {
   /* Palette */
-  --bg:        #f5f7fb;
+  --bg:        #f6f3ec;
   --surface:   #ffffff;
   --ink:       #0f0f0f;
   --ink-2:     #444444;
@@ -22,7 +22,6 @@
   --green:     #4ade80;
 
   /* Type */
-  --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'Nunito Sans', system-ui, sans-serif;
 
   /* Spacing */
@@ -42,7 +41,7 @@ html, body {
 body::before {
   content: "";
   position: fixed; inset: 0;
-  background-image: radial-gradient(circle, var(--dot) 1.2px, transparent 1.2px);
+  background-image: radial-gradient(circle, var(--dot) 1.3px, transparent 1.3px);
   background-size: 20px 20px;
   z-index: 0;
   pointer-events: none;
@@ -380,8 +379,8 @@ body::before {
   transition: box-shadow 0.25s, transform 0.25s;
 }
 .project-card:hover {
-  box-shadow: 0 10px 36px rgba(0,0,0,0.09);
-  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+  transform: translateY(-6px) scale(1.01);
 }
 
 .card-cover {
