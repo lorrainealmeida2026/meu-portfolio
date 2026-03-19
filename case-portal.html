@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal do Beneficiário — Case · Lorraine Almeida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/case-portal.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__label">Visitante</div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      Voltar
+    </a>
+    <span class="nav__title" data-i18n="portal.nav.title">Portal do Beneficiário — Case</span>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+        <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="nav__link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <button class="nav__lang" id="langToggle" aria-label="Trocar idioma">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span id="langLabel">ES</span>
+        </button>
+      </div>
+  </nav>
+
+
+  <!-- ════ P1 — HERO ════ -->
+  <section class="case-hero">
+    <div class="container case-hero__inner">
+      <span class="case-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span data-i18n="portal.badge">Sistema Legado · HealthTech · B2B2C · TOTVS</span>
+            </span>
+
+      <h1 class="case-hero__headline" data-i18n="portal.headline">Redesign de um sistema legado crítico para reduzir dependência de suporte e aumentar autonomia do usuário</h1>
+      
+
+      <p class="case-hero__sub" data-i18n="portal.sub">Reestruturação da experiência de um portal de planos de saúde sem atualizações desde 2013, com foco em clareza, eficiência e conformidade regulatória. Atuei na descoberta, redefinição da arquitetura da informação e validação com usuários, impactando diretamente a eficiência das tarefas críticas.</p>
+      
+
+      <div class="case-meta">
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.client">Cliente</div>
+          <div class="case-meta__value" data-i18n="portal.val.client">TOTVS Saúde</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.role">Papel</div>
+          <div class="case-meta__value" data-i18n="portal.val.role">Product Designer</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="portal.s1.eye" data-i18n="case.meta.context">Contexto</div>
+          <div class="case-meta__value" data-i18n="portal.val.context">Sistema Legado</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.reg">Regulação</div>
+          <div class="case-meta__value" data-i18n="portal.val.reg">ANS</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.scope">Escopo</div>
+          <div class="case-meta__value" data-i18n="portal.val.scope">Discovery → Protótipo</div>
+        </div>
+        <div class="case-meta__card case-meta__card--accent">
+          <div class="case-meta__label" data-i18n="case.meta.impact">Taxa de sucesso</div>
+          <div class="case-meta__value">94%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P2 — CONTEXTO ════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow">Contexto</p>
+        <h2 class="section-title" data-i18n="portal.s1.h2">Um portal crítico parado no tempo.</h2>
+        <p class="section-body">
+          O portal do beneficiário era a principal interface digital para usuários acessarem serviços do plano de saúde — solicitação de reembolso, busca de prestadores, acompanhamento de status. Apesar da sua importância, o sistema não recebia atualizações estruturais desde 2013.
+        </p>
+
+        <div class="context-problems">
+          <div class="context-problem-card">
+            <div class="context-problem-card__icon">🌀</div>
+            <div class="context-problem-card__title" data-i18n="portal.c.1t">Fluxos complexos e inconsistentes</div>
+            <div class="context-problem-card__desc" data-i18n="portal.c.1d">Navegação sem padrão entre seções, com ações conflitantes e ausência de feedback ao usuário.</div>
+          </div>
+          <div class="context-problem-card">
+            <div class="context-problem-card__icon">🎧</div>
+            <div class="context-problem-card__title" data-i18n="portal.c.2t">Alta dependência de suporte</div>
+            <div class="context-problem-card__desc" data-i18n="portal.c.2d">Tarefas simples geravam volume de atendimento porque o usuário não conseguia concluí-las sozinho.</div>
+          </div>
+          <div class="context-problem-card">
+            <div class="context-problem-card__icon">⚠️</div>
+            <div class="context-problem-card__title" data-i18n="portal.c.3t">Erros regulatórios frequentes</div>
+            <div class="context-problem-card__desc" data-i18n="portal.c.3d">Campos obrigatórios exigidos pela ANS sem padronização geravam inconsistências e retrabalho.</div>
+          </div>
+          <div class="context-problem-card">
+            <div class="context-problem-card__icon">📉</div>
+            <div class="context-problem-card__title" data-i18n="portal.c.4t">Baixa autonomia do usuário</div>
+            <div class="context-problem-card__desc" data-i18n="portal.c.4d">O sistema não empoderava o usuário — ele precisava de ajuda externa para completar ações básicas.</div>
+          </div>
+        </div>
+
+        <div class="tension-block" style="margin-top: var(--space-8)">
+          <p>O desafio era <strong data-i18n="portal.c.strong">modernizar a experiência sem comprometer regras regulatórias e processos existentes</strong> — um equilíbrio entre usabilidade e conformidade.</p>
+        
+        <!-- ============================================================
+             📸 IMAGEM — Seção CONTEXTO — prints do sistema antigo, screenshots legado
+             Como usar:
+             ============================================================ -->
+
+      </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P3 — PROBLEMA ════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s2.eye">O Problema Real</p>
+        <h2 class="section-title" data-i18n="portal.s2.h2">Não era só frustração — era impacto direto na operação.</h2>
+        <p class="section-body">
+          Usuários não conseguiam completar tarefas básicas sem ajuda, aumentando o volume de atendimento e o custo operacional. Inconsistências na interface geravam erros no preenchimento de informações exigidas pela ANS, criando riscos para o negócio.
+        </p>
+
+        <div class="problem-impact">
+          <div class="impact-card">
+            <div class="impact-card__icon">👤</div>
+            <div class="impact-card__label" data-i18n="portal.p.exp">Experiência</div>
+            <div class="impact-card__desc" data-i18n="portal.p.exp.d">Usuários abandonavam tarefas críticas por não entender o próximo passo</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-card__icon">📞</div>
+            <div class="impact-card__label" data-i18n="portal.p.oper">Operação</div>
+            <div class="impact-card__desc" data-i18n="portal.p.oper.d">Volume de suporte elevado por tarefas que deveriam ser auto-serviço</div>
+          </div>
+          <div class="impact-card impact-card--risk">
+            <div class="impact-card__icon">⚖️</div>
+            <div class="impact-card__label" data-i18n="portal.p.conf" data-i18n="portal.res.conf.strong">Conformidade</div>
+            <div class="impact-card__desc" data-i18n="portal.p.conf.d">Erros no preenchimento de campos ANS geravam risco regulatório real</div>
+          </div>
+        </div>
+
+        <div class="tension-block tension-block--risk" style="margin-top: var(--space-8)">
+          <p>O problema não era apenas de usabilidade — era de <strong data-i18n="portal.p.strong">eficiência operacional e conformidade regulatória.</strong></p>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P4 — PESQUISA ════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s3.eye">Pesquisa</p>
+        <h2 class="section-title" data-i18n="portal.s3.h2">Entrevistas com os três lados do fluxo.</h2>
+        <p class="section-body">
+          Mais do que identificar problemas de interface, a pesquisa revelou falhas estruturais no fluxo de uso. Conduzi entrevistas com diferentes perfis envolvidos no processo para ter visão completa do problema.
+        </p>
+
+        <div class="research-profiles">
+          <div class="research-profile" data-i18n="portal.res.p1">Beneficiários</div>
+          <div class="research-profile" data-i18n="portal.res.p2">Atendentes de suporte</div>
+          <div class="research-profile" data-i18n="portal.res.p3">Áreas internas responsáveis</div>
+        </div>
+
+        <div class="research-findings">
+          <div class="finding-card">
+            <div class="finding-card__icon">🔍</div>
+            <div class="finding-card__title" data-i18n="portal.f.1t">Falta de clareza nas etapas</div>
+            <div class="finding-card__desc">Usuários não sabiam o que acontecia após uma ação. Ausência de feedback em momentos decisivos gerava dúvida e retrabalho.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-card__icon">🔀</div>
+            <div class="finding-card__title" data-i18n="portal.f.2t">Inconsistência entre fluxos</div>
+            <div class="finding-card__desc" data-i18n="portal.f.2dc">Padrões de interação diferentes para ações similares criavam desorientação — o que funcionava em uma seção não funcionava em outra.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-card__icon">📋</div>
+            <div class="finding-card__title" data-i18n="portal.f.3t">Formulários sem orientação</div>
+            <div class="finding-card__desc">Campos obrigatórios sem contexto e mensagens de erro genéricas geravam erros recorrentes — especialmente em solicitações de reembolso.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-card__icon">🎧</div>
+            <div class="finding-card__title" data-i18n="portal.f.4t">Suporte como workaround</div>
+            <div class="finding-card__desc">Atendentes relataram receber chamados para tarefas triviais. O suporte tinha virado o manual de instruções que o sistema não oferecia.</div>
+          </div>
+        </div>
+
+</div>
+      </div>
+    </div>
+
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção PESQUISA — fotos de entrevistas, mapa de insights
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/entrevista-totvs.avif" alt="Entrevistas com usuários — Portal do Beneficiário" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P5 — PRIORIZAÇÃO ════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s4.eye">Priorização</p>
+        <h2 class="section-title" data-i18n="portal.s4.h2">Diante de múltiplos problemas, critério define o caminho.</h2>
+        <p class="section-body" data-i18n="portal.pri.pb">
+          Utilizamos uma matriz de priorização para identificar oportunidades com maior potencial de reduzir fricção e dependência de suporte. A pergunta central que orientou todas as decisões:
+        </p>
+
+        <div class="priority-question">
+          <div class="priority-question__label" data-i18n="portal.pri.label">Pergunta norteadora</div>
+          <div class="priority-question__text">Como permitir que o usuário resolva tarefas críticas<br>sem depender do atendimento?</div>
+        </div>
+
+        <div class="priority-criteria">
+          <div class="criteria-card">
+            <div class="criteria-card__num">01</div>
+            <div class="criteria-card__title" data-i18n="portal.pri.1t">Impacto no usuário</div>
+            <div class="criteria-card__desc" data-i18n="portal.pri.1d">Quão frequente e crítica é a tarefa afetada? Quantos usuários enfrentam esse problema?</div>
+          </div>
+          <div class="criteria-card">
+            <div class="criteria-card__num">02</div>
+            <div class="criteria-card__title" data-i18n="portal.pri.2t">Impacto no negócio</div>
+            <div class="criteria-card__desc" data-i18n="portal.pri.2d">A solução reduz volume de suporte, risco regulatório ou custo operacional?</div>
+          </div>
+          <div class="criteria-card">
+            <div class="criteria-card__num">03</div>
+            <div class="criteria-card__title" data-i18n="portal.pri.3t">Viabilidade técnica</div>
+            <div class="criteria-card__desc" data-i18n="portal.pri.3d">É possível implementar dentro das restrições do sistema legado e das regras da ANS?</div>
+          </div>
+        </div>
+
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção PRIORIZAÇÃO — matriz de priorização, HMW
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/matriz-totvs.avif" alt="Matriz de priorização — Portal do Beneficiário" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P6 — ARQUITETURA ════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s5.eye">Arquitetura</p>
+        <h2 class="section-title" data-i18n="portal.s5.h2">Reestruturação dos fluxos principais da plataforma.</h2>
+        <p class="section-body" data-i18n="portal.arch.pb">
+          A reestruturação começou pelos caminhos do usuário. Mapeei e reorganizei os pontos de decisão ao longo de cada jornada, criando uma base para alinhamento com desenvolvimento.
+        </p>
+
+        <div class="arch-steps">
+          <div class="arch-step">
+            <div class="arch-step__num">1</div>
+            <div>
+              <div class="arch-step__title" data-i18n="portal.arch.1t">Reduzir ambiguidade nas etapas</div>
+              <div class="arch-step__desc">Cada passo do fluxo passou a ter uma ação clara, feedback visível e caminho de volta explícito — eliminando a incerteza que gerava abandono.</div>
+            </div>
+          </div>
+          <div class="arch-step">
+            <div class="arch-step__num">2</div>
+            <div>
+              <div class="arch-step__title" data-i18n="portal.arch.2t">Garantir consistência entre fluxos</div>
+              <div class="arch-step__desc">Padrões de interação unificados entre reembolso, busca de prestadores e acompanhamento de status — mesma lógica, mesmas convenções.</div>
+            </div>
+          </div>
+          <div class="arch-step">
+            <div class="arch-step__num">3</div>
+            <div>
+              <div class="arch-step__title" data-i18n="portal.arch.3t">Diminuir erros no preenchimento</div>
+              <div class="arch-step__desc">Campos obrigatórios da ANS com contexto, validação em tempo real e mensagens de erro acionáveis — não apenas alertas genéricos.</div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção ARQUITETURA — fluxograma novo, comparação antes/depois
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/fluxograma-totvs.avif" alt="Fluxograma — Portal do Beneficiário" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P7 — PROTOTIPAÇÃO ════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s6.eye">Prototipação</p>
+        <h2 class="section-title" data-i18n="portal.s6.h2">Iterações guiadas por evidências, não por suposição.</h2>
+        <p class="section-body" data-i18n="portal.proto.pb">
+          Com os fluxos definidos, desenvolvi protótipos de baixa e alta fidelidade para validar as soluções antes da implementação. Cada iteração foi guiada por evidências coletadas nos testes.
+        </p>
+
+        <div class="proto-improvements">
+          <div class="proto-card">
+            <div class="proto-card__after" data-i18n="portal.imp.label2">Melhoria</div>
+            <div class="proto-card__title" data-i18n="portal.imp.1t">Navegação orientada</div>
+            <div class="proto-card__desc" data-i18n="portal.imp.1d">Breadcrumb e indicadores de progresso em formulários — o usuário sempre sabe onde está e quanto falta.</div>
+          </div>
+          <div class="proto-card">
+            <div class="proto-card__after">Melhoria</div>
+            <div class="proto-card__title" data-i18n="portal.imp.2t">Separação clara entre ações</div>
+            <div class="proto-card__desc" data-i18n="portal.imp.2d">Botões "voltar" e "próximo" separados visualmente, com hierarquia e peso corretos para cada contexto.</div>
+          </div>
+          <div class="proto-card">
+            <div class="proto-card__after">Melhoria</div>
+            <div class="proto-card__title" data-i18n="portal.imp.3t">Feedback em tempo real</div>
+            <div class="proto-card__desc" data-i18n="portal.imp.3d">Validação de campos durante o preenchimento, não apenas ao submeter — reduzindo erros e retrabalho.</div>
+          </div>
+          <div class="proto-card">
+            <div class="proto-card__after">Melhoria</div>
+            <div class="proto-card__title" data-i18n="portal.imp.4t">Mensagens de erro acionáveis</div>
+            <div class="proto-card__desc" data-i18n="portal.imp.4d">Erros com contexto e orientação de correção — especialmente em campos regulatórios da ANS.</div>
+          </div>
+        </div>
+
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção PROTOTIPAÇÃO — prints do protótipo, telas finais
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/wireframe-totvs.avif" alt="Wireframes e protótipo — Portal do Beneficiário" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P8 — RESULTADOS ════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s7.eye">Resultados</p>
+        <h2 class="section-title" data-i18n="portal.s7.h2">Os testes validaram a efetividade das mudanças.</h2>
+        <p class="section-body" data-i18n="portal.res.pb">
+          Os resultados indicam uma experiência mais clara, eficiente e alinhada às necessidades reais dos usuários — com impacto direto na autonomia e na confiança no sistema.
+        </p>
+
+        <div class="results-hero">
+          <div class="result-big">
+            <div class="result-big__value">94%</div>
+            <div class="result-big__label" data-i18n="portal.res.success.label">taxa de sucesso nas tarefas com usuários reais</div>
+          </div>
+          <div class="result-big" style="background: #0d4a7a">
+            <div class="result-big__value">9,5</div>
+            <div class="result-big__label" data-i18n="portal.res.nps.label">NPS médio após testes de usabilidade</div>
+          </div>
+          <div class="results-secondary">
+            <div class="result-row">
+              <div class="result-row__icon">📉</div>
+              <div class="result-row__text"><strong data-i18n="portal.res.err.strong">Redução de erros</strong> no preenchimento de campos regulatórios</div>
+            </div>
+            <div class="result-row">
+              <div class="result-row__icon">🙋</div>
+              <div class="result-row__text"><strong data-i18n="portal.res.auto.strong">Maior autonomia</strong> — usuários completando tarefas sem ajuda</div>
+            </div>
+            <div class="result-row">
+              <div class="result-row__icon">✅</div>
+              <div class="result-row__text"><strong>Conformidade</strong> com requisitos ANS preservada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-quote">
+          <p class="user-quote__text" data-i18n="portal.quote3">O portal antigo era tão confuso que não dava nem pra usar na produção.</p>
+        </div>
+
+</div>
+      </div>
+    </div>
+  
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção RESULTADOS — dashboard de métricas, NPS, prints finais
+             Como usar:
+             ============================================================ -->
+
+        <!-- Componente Antes/Depois -->
+        <div class="compare-slider" id="compareSlider">
+          <div class="compare-slider__before">
+            <img src="images/portal-novo.png" alt="Portal após o redesign" />
+            <span class="compare-slider__label compare-slider__label--before" data-i18n="portal.slider.before">Antes</span>
+          </div>
+          <div class="compare-slider__after">
+            <img src="images/portalantigo.png" alt="Portal antes do redesign" />
+            <span class="compare-slider__label compare-slider__label--after" data-i18n="portal.slider.after">Depois</span>
+          </div>
+          <div class="compare-slider__handle" id="compareHandle">
+            <div class="compare-slider__line"></div>
+            <div class="compare-slider__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════ P9 — APRENDIZADOS ════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="portal.s8.eye">Aprendizados</p>
+        <h2 class="section-title" data-i18n="portal.s8.h2">Projetar para sistemas regulados exige equilibrar usabilidade, clareza e conformidade.</h2>
+
+        <div class="learnings-list">
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="portal.learn.full1"><strong data-i18n="portal.learn.1s">Problemas de UX muitas vezes são estruturais, não apenas visuais.</strong> Trocar cores e fontes não resolve — é preciso redesenhar os fluxos e os pontos de decisão.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="portal.learn.full2"><strong data-i18n="portal.learn.2s">Decisões de arquitetura têm impacto direto na eficiência operacional.</strong> Um fluxo bem estruturado reduz o volume de suporte sem precisar de nenhuma feature nova.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="portal.learn.full3"><strong data-i18n="portal.learn.3s">Envolver múltiplos stakeholders é essencial para soluções sustentáveis.</strong> Beneficiários, atendentes e equipes internas tinham perspectivas complementares — sem todas, a solução seria parcial.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="portal.learn.full4"><strong data-i18n="portal.learn.4s">Simplicidade em contextos complexos exige rigor, não simplificação superficial.</strong> Cada decisão precisava funcionar dentro das restrições da ANS — o que reforçou a necessidade de pensar em produto, não só em interface.</div>
+          </div>
+        </div>
+
+        <div class="closing-statement">
+          <p>
+            Atuar nesse contexto exigiu transitar entre <strong data-i18n="portal.final.strong">design, negócio e restrições regulatórias</strong> de forma constante — reforçando meu papel na interseção entre experiência, produto e estratégia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════ FOOTER ════ -->
+  <div class="case-footer">
+    <div class="container">
+      <div class="case-footer__nav">
+
+        <!-- Anterior -->
+        <div class="case-footer__prev">
+          <span class="case-footer__dir" data-i18n="nav.prev">ANTERIOR</span>
+          <a href="case-avivah.html" class="case-footer__link case-footer__link--prev">
+            ← <span data-i18n="footer.prev.avivah">Avivah</span>
+          </a>
+        </div>
+
+        <!-- Início -->
+        <div class="case-footer__center">
+          <a href="index.html" class="case-footer__home" aria-label="Início">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </a>
+          <span class="case-footer__home-label" data-i18n="nav.home">Início</span>
+        </div>
+
+        <!-- Próximo -->
+        <div class="case-footer__next">
+          <span class="case-footer__dir" data-i18n="nav.next">PRÓXIMO</span>
+          <a href="case-forlex.html" class="case-footer__link case-footer__link--next">
+            <span data-i18n="footer.next.forlex">Forlex</span> →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    (function () {
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      let tx = 0, ty = 0, cx = 0, cy = 0;
+      document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cursor.style.opacity = '1'; });
+      document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+      function tick() { cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12; cursor.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(tick); }
+      tick();
+    })();
+
+    const nav = document.getElementById('nav');
+    const bar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+      if (bar) bar.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
+    }, { passive: true });
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    
+    /* ── Compare Slider ── */
+    (function() {
+      const slider = document.getElementById('compareSlider');
+      if (!slider) return;
+      const after = slider.querySelector('.compare-slider__after');
+      const handle = document.getElementById('compareHandle');
+      let dragging = false;
+
+      function setPos(x) {
+        const rect = slider.getBoundingClientRect();
+        let pct = ((x - rect.left) / rect.width) * 100;
+        pct = Math.min(Math.max(pct, 2), 98);
+        after.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+        handle.style.left = pct + '%';
+      }
+
+      slider.addEventListener('mousedown', e => { dragging = true; setPos(e.clientX); });
+      window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
+      window.addEventListener('mouseup', () => { dragging = false; });
+
+      slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
+      window.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+      window.addEventListener('touchend', () => { dragging = false; });
+    })();
+
+
+    /* ── Lightbox ── */
+    (function() {
+      const lb = document.createElement('div');
+      lb.className = 'lightbox'; lb.id = 'lightbox';
+      lb.innerHTML = '<button class="lightbox__close" id="lbClose" aria-label="Fechar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button><img class="lightbox__img" id="lbImg" src="" alt="" />';
+      document.body.appendChild(lb);
+      const lbImg = document.getElementById('lbImg');
+      const lbClose = document.getElementById('lbClose');
+      document.querySelectorAll('.img-wrap').forEach(wrap => {
+        wrap.addEventListener('click', () => {
+          const img = wrap.querySelector('img');
+          lbImg.src = img.src; lbImg.alt = img.alt;
+          lb.classList.add('active'); document.body.style.overflow = 'hidden'; document.body.classList.add('lightbox-open');
+        });
+      });
+      function close() { lb.classList.remove('active'); document.body.style.overflow = ''; document.body.classList.remove('lightbox-open'); }
+      lbClose.addEventListener('click', close);
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Lorraine Almeida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/contato.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__label">Visitante</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      Início
+    </a>
+    <span class="nav__title">Contato</span>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+        <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="nav__link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <button class="nav__lang" id="langToggle" aria-label="Trocar idioma">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span id="langLabel">ES</span>
+        </button>
+      </div>
+  </nav>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="contact-hero">
+      <div class="container contact-hero__inner">
+
+        <p class="contact-hero__eyebrow" data-i18n="contato.eyebrow">Contato</p>
+
+        <h1 class="contact-hero__headline">
+          Vamos conversar sobre seu próximo projeto?
+        </h1>
+
+        <div class="contact-hero__desc">
+          <p data-i18n="contato.desc1">Atuo conectando pesquisa, estratégia e execução para estruturar experiências claras, eficientes e escaláveis.</p>
+          <p data-i18n="contato.desc2">Tenho experiência em sistemas complexos, produtos com IA e contextos regulados.</p>
+          <p data-i18n="contato.desc3">Aberta a oportunidades e projetos.</p>
+        </div>
+
+        <p class="contact-hero__location" data-i18n="contato.location">Baseada no Brasil &nbsp;•&nbsp; Disponível para remoto e híbrido</p>
+
+        <!-- Cards de contato -->
+        <div class="contact-cards">
+
+          <!-- E-mail -->
+          <a href="mailto:almeidaaraujolorraine@gmail.com" class="contact-card"
+             style="--card-accent:#ff3fa4; --card-bg:rgba(255,63,164,0.08)">
+            <div class="contact-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label" data-i18n="contato.email.label">E-mail</div>
+              <p class="contact-card__desc" data-i18n="contato.email.desc">Para oportunidades, projetos ou conversas diretas</p>
+            </div>
+            <span class="contact-card__action">
+              Enviar e-mail
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="contact-card"
+             style="--card-accent:#0a66c2; --card-bg:rgba(10,102,194,0.08)">
+            <div class="contact-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label" data-i18n="contato.li.label">LinkedIn</div>
+              <p class="contact-card__desc" data-i18n="contato.li.desc">Mais sobre minha trajetória e experiências</p>
+            </div>
+            <span class="contact-card__action">
+              Ver perfil
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/5531920014354" target="_blank" rel="noopener" class="contact-card"
+             style="--card-accent:#25d366; --card-bg:rgba(37,211,102,0.08)">
+            <div class="contact-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label" data-i18n="contato.wa.label">WhatsApp</div>
+              <p class="contact-card__desc" data-i18n="contato.wa.desc">Contato rápido para alinhamentos</p>
+            </div>
+            <span class="contact-card__action">
+              Enviar mensagem
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FORMULÁRIO ══ -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-header reveal">
+          <p class="form-eyebrow" data-i18n="contato.form.eyebrow">Formulário</p>
+          <h2 class="form-title" data-i18n="contato.form.title">Prefere escrever? Me manda uma mensagem.</h2>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mqeynwyw" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name" data-i18n="contato.label.nome">Nome</label>
+              <input class="form-input" type="text" id="name" name="name" data-i18n-ph="contato.form.ph.name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email"><span data-i18n="contato.label.email">E-mail</span></label>
+              <input class="form-input" type="email" id="email" name="email" data-i18n-ph="contato.form.ph.email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject"><span data-i18n="contato.label.assunto">Assunto</span></label>
+            <input class="form-input" type="text" id="subject" name="subject" data-i18n-ph="contato.form.ph.subject" placeholder="Oportunidade, projeto, parceria..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message"><span data-i18n="contato.label.msg">Mensagem</span></label>
+            <textarea class="form-textarea" id="message" name="message" data-i18n-ph="contato.form.ph.message" placeholder="Conta um pouco sobre o que você precisa..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-i18n="footer.copy">© 2026 Lorraine Almeida</span>
+      <span data-i18n="footer.made">Feito com cuidado e café ☕</span>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Cursor ── */
+    (function () {
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      let tx = 0, ty = 0, cx = 0, cy = 0;
+      document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cursor.style.opacity = '1'; });
+      document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+      function tick() { cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12; cursor.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(tick); }
+      tick();
+    })();
+
+    /* ── Nav scroll ── */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+
+    /* ── Scroll reveal ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    /* ── Formulário → Formspree ── */
+    const form = document.getElementById('contactForm');
+    const btn  = form.querySelector('.btn-submit');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      btn.textContent = 'Enviando...';
+      btn.style.opacity = '0.7';
+
+      const data = new FormData(form);
+
+      try {
+        const res = await fetch('https://formspree.io/f/mqeynwyw', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.innerHTML = `
+            <div style="padding: 2.5rem; background: var(--surface); border: 1.5px solid #25d366; border-radius: var(--radius-lg); text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+              <div style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Mensagem enviada!</div>
+              <div style="font-size: 0.875rem; font-weight: 300; color: var(--text-secondary);">Obrigada pelo contato. Retorno em breve!</div>
+            </div>`;
+        } else {
+          btn.textContent = 'Erro ao enviar — tente novamente';
+          btn.style.opacity = '1';
+        }
+      } catch {
+        btn.textContent = 'Erro ao enviar — tente novamente';
+        btn.style.opacity = '1';
+      }
+    });
+
+    
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>
