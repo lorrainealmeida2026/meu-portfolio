@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avivah — Case · Lorraine Almeida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/case-avivah.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__label">Visitante</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      Voltar
+    </a>
+    <span class="nav__title" data-i18n="avivah.nav.title">Avivah — Case</span>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+        <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="nav__link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <button class="nav__lang" id="langToggle" aria-label="Trocar idioma">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span id="langLabel">ES</span>
+        </button>
+      </div>
+  </nav>
+
+
+  <!-- ════════════════
+       P1 — HERO
+  ════════════════ -->
+  <section class="case-hero">
+    <div class="container case-hero__inner">
+      <span class="case-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="avivah.badge">Marketplace · Community Product · MVP</span>
+            </span>
+
+      <h1 class="case-hero__headline" data-i18n="avivah.headline">Construindo um marketplace para uma comunidade específica — do zero ao MVP validado</h1>
+      
+
+      <p class="case-hero__sub" data-i18n="avivah.sub">Produto digital criado para conectar organizadores e participantes de eventos cristãos, com foco em descoberta, curadoria e senso de pertencimento. Atuei na definição da proposta de valor, estrutura do marketplace e arquitetura da experiência, da concepção à primeira versão funcional.</p>
+      
+
+      <div class="case-meta">
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.client">Cliente</div>
+          <div class="case-meta__value" data-i18n="avivah.val.client">E-inscrição</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.product">Produto</div>
+          <div class="case-meta__value">Avivah</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.role">Papel</div>
+          <div class="case-meta__value" data-i18n="avivah.val.role">Product Designer</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.sector">Setor</div>
+          <div class="case-meta__value" data-i18n="avivah.val.sector">Marketplace</div>
+        </div>
+        <div class="case-meta__card">
+          <div class="case-meta__label" data-i18n="case.meta.scope">Escopo</div>
+          <div class="case-meta__value" data-i18n="avivah.val.scope">Zero ao MVP</div>
+        </div>
+        <div class="case-meta__card case-meta__card--accent">
+          <div class="case-meta__label" data-i18n="case.meta.delivery">Entrega</div>
+          <div class="case-meta__value" data-i18n="avivah.val.delivery">MVP validado</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P2 — CONTEXTO
+  ════════════════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s1.eye">Contexto</p>
+        <h2 class="section-title" data-i18n="avivah.s1.h2">O mercado de eventos cristãos operava com soluções genéricas.</h2>
+        <p class="section-body">
+          Organizadores e participantes utilizavam plataformas amplas, sem filtros relevantes, sem curadoria e sem identidade cultural. Isso resultava em uma experiência fragmentada, pouco confiável e sem senso de pertencimento.
+        </p>
+        <div class="context-tension" style="margin-top: var(--space-8)">
+          <p>A oportunidade era construir um produto <strong data-i18n="avivah.c.strong">específico para essa comunidade</strong>, respeitando seu contexto, valores e comportamento.</p>
+        
+        <!-- ============================================================
+             📸 IMAGEM — Seção CONTEXTO — mapa do mercado, prints de concorrentes
+             Como usar:
+             ============================================================ -->
+
+      </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P3 — PROBLEMA
+  ════════════════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s2.eye">O Problema</p>
+        <h2 class="section-title" data-i18n="avivah.s2.h2">Plataformas genéricas não atendem comunidades específicas.</h2>
+        <p class="section-body" data-i18n="avivah.p.pb">
+          Ferramentas existentes eram pensadas para escala ampla, não para profundidade de contexto. O desafio era criar um marketplace que equilibrasse eficiência digital com identidade cultural.
+        </p>
+
+        <div class="bullet-list">
+          <div class="bullet-list__item" data-i18n="avivah.b.1">Falta de relevância na descoberta de eventos</div>
+          <div class="bullet-list__item" data-i18n="avivah.b.2">Experiências pouco personalizadas e sem contexto</div>
+          <div class="bullet-list__item" data-i18n="avivah.b.3">Ausência de curadoria de conteúdo religioso</div>
+          <div class="bullet-list__item" data-i18n="avivah.b.4">Baixo senso de comunidade e pertencimento</div>
+        </div>
+      </div>
+    </div>
+  
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção PROBLEMA — prints de dores, quotes de usuários
+             Como usar:
+             ============================================================ -->
+
+      </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P4 — BENCHMARK
+  ════════════════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s3.eye">Benchmark</p>
+        <h2 class="section-title" data-i18n="avivah.s3.h2">A análise do ecossistema revelou padrões claros de limitação.</h2>
+        <p class="section-body" data-i18n="avivah.bm.pb">
+          Plataformas como Sympla e Eventbrite atendem bem cenários genéricos, mas falham em profundidade de contexto.
+        </p>
+
+        <div class="benchmark-grid">
+          <div class="benchmark-card">
+            <div class="benchmark-card__platform" data-i18n="avivah.bm.sympla">Sympla</div>
+            <div class="benchmark-gap">Boa usabilidade geral, mas <strong data-i18n="avivah.bm.sympla.strong">sem segmentação</strong> para nichos religiosos ou filtros por comunidade.</div>
+          </div>
+          <div class="benchmark-card">
+            <div class="benchmark-card__platform" data-i18n="avivah.bm.eventbrite">Eventbrite</div>
+            <div class="benchmark-gap">Amplo alcance, porém experiência <strong data-i18n="avivah.bm.event.strong">genérica demais</strong> — sem curadoria contextual ou identidade cultural.</div>
+          </div>
+          <div class="benchmark-card benchmark-card--highlight">
+            <div class="benchmark-card__platform" data-i18n="avivah.bm.avivah">Avivah ✦</div>
+            <div class="benchmark-gap">Segmentação cristã nativa, curadoria editorial, <strong data-i18n="avivah.bm.avivah.strong">identidade de comunidade</strong> como diferencial estrutural.</div>
+          </div>
+        </div>
+
+        <div class="benchmark-insight">
+          <p>O diferencial do produto não estaria apenas na interface, mas no <strong data-i18n="avivah.res.strong2">posicionamento e nas regras do marketplace</strong> — uma decisão de produto, não só de UX.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="padding-top:0">
+        <!-- ============================================================
+             📸 IMAGEM — Seção BENCHMARK — tabela comparativa, prints das plataformas
+             Como usar:
+             ============================================================ -->
+        <div class="img-wrap">
+          <img src="images/bench-avivah.avif" alt="Benchmark — Avivah" class="case-img" />
+          <span class="img-wrap__zoom" data-i18n="nav.ver.imagem">Ver imagem</span>
+        </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P5 — PESQUISA
+  ════════════════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s4.eye">Pesquisa</p>
+        <h2 class="section-title" data-i18n="avivah.s4.h2">Entrevistas revelaram necessidades além da funcionalidade.</h2>
+        <p class="section-body" data-i18n="avivah.res.pb">
+          Conduzi entrevistas qualitativas com organizadores e participantes de eventos cristãos. Os comportamentos e expectativas encontrados iam além do que ferramentas existentes oferecem.
+        </p>
+
+        <div class="research-split">
+          <div>
+            <div class="research-group__title" data-i18n="avivah.arch.orgb">Organizadores buscavam</div>
+            <div class="research-quote" data-i18n="avivah.arch.org.d2">Visibilidade confiável, divulgação dentro de um contexto relevante e ferramentas que entendam o tipo de evento que produzem.</div>
+          </div>
+          <div>
+            <div class="research-group__title" data-i18n="avivah.arch.partb">Participantes buscavam</div>
+            <div class="research-quote" data-i18n="avivah.arch.part.d2">Pertencimento, relevância e identificação com os eventos — mais do que descobrir o que está acontecendo, queriam se sentir parte.</div>
+          </div>
+        </div>
+
+</div>
+
+        <div class="research-insight">
+          <p>Esses insights direcionaram o produto para além de um marketplace funcional — <strong data-i18n="avivah.res.strong3">um espaço de curadoria e identidade para uma comunidade real.</strong></p>
+        </div>
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção PESQUISA — fotos de entrevistas, mapa de insights
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/personas-avivah.avif" alt="Personas e mapeamento de pesquisa — Avivah" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P6 — NAMING
+  ════════════════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s5.eye">Naming</p>
+        <h2 class="section-title" data-i18n="avivah.s5.h2">O nome foi uma decisão estratégica de produto.</h2>
+        <p class="section-body">
+          A marca precisava refletir energia, pertencimento e identidade cristã — e ao mesmo tempo funcionar como um ativo de confiança dentro do marketplace. O processo envolveu co-criação com stakeholders, análise de disponibilidade e definição de atributos de marca.
+        </p>
+
+        <div class="naming-card">
+          <div class="naming-card__word" data-i18n="avivah.val.product">Avivah</div>
+          <div class="naming-card__meaning">Do hebraico: "fonte de vida". Um nome que carrega energia, propósito e pertencimento — não apenas uma marca, mas um posicionamento.</div>
+        </div>
+
+        <div class="naming-process">
+          <div class="naming-step">
+            <div class="naming-step__num">01</div>
+            <div class="naming-step__title" data-i18n="avivah.naming.step1t">Co-criação com stakeholders</div>
+            <div class="naming-step__desc" data-i18n="avivah.naming.step1d">Sessões de ideação coletiva para alinhar propósito, tom de voz e atributos esperados da marca.</div>
+          </div>
+          <div class="naming-step">
+            <div class="naming-step__num">02</div>
+            <div class="naming-step__title" data-i18n="avivah.naming.step2t">Análise de disponibilidade</div>
+            <div class="naming-step__desc" data-i18n="avivah.naming.step2d">Verificação de domínio, redes sociais e registro de marca para garantir viabilidade comercial.</div>
+          </div>
+          <div class="naming-step">
+            <div class="naming-step__num">03</div>
+            <div class="naming-step__title" data-i18n="avivah.naming.step3t">Definição de atributos</div>
+            <div class="naming-step__desc" data-i18n="avivah.naming.step3d">Acolhimento, segurança e comunidade como pilares que guiaram todas as decisões visuais e de produto.</div>
+          </div>
+        
+        <!-- ============================================================
+             📸 IMAGEM — Seção NAMING — moodboard, opções de nome, identidade
+             Como usar:
+             ============================================================ -->
+
+      </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P7 — ARQUITETURA
+  ════════════════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s6.eye">Arquitetura</p>
+        <h2 class="section-title" data-i18n="avivah.s6.h2">Estrutura definida a partir das jornadas reais dos dois lados.</h2>
+        <p class="section-body" data-i18n="avivah.arch.pb">
+          O desafio era equilibrar duas necessidades distintas sem comprometer nenhuma delas. A arquitetura priorizou clareza e relevância, evitando sobrecarga e mantendo foco na experiência da comunidade.
+        </p>
+
+        <div class="arch-grid">
+          <div>
+            <div class="arch-side__title" data-i18n="avivah.arch.org">Para organizadores</div>
+            <div class="arch-feature" data-i18n="avivah.arch.o1">Publicação simplificada de eventos</div>
+            <div class="arch-feature" data-i18n="avivah.arch.o2">Perfis de organizadores</div>
+            <div class="arch-feature" data-i18n="avivah.arch.o3">Gestão de inscrições</div>
+            <div class="arch-feature" data-i18n="avivah.arch.o4">Visibilidade segmentada</div>
+          </div>
+          <div>
+            <div class="arch-side__title" data-i18n="avivah.arch.part">Para participantes</div>
+            <div class="arch-feature" data-i18n="avivah.arch.p1">Listagem segmentada por contexto</div>
+            <div class="arch-feature" data-i18n="avivah.arch.p2">Páginas detalhadas de eventos</div>
+            <div class="arch-feature" data-i18n="avivah.arch.p3">Filtros por público e categoria</div>
+            <div class="arch-feature" data-i18n="avivah.arch.p4">Compartilhamento facilitado</div>
+          </div>
+        </div>
+
+</div>
+      </div>
+    </div>
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção ARQUITETURA — fluxograma, sitemap, wireframes
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap" style="max-height: 320px; overflow: hidden; cursor: zoom-in;">
+            <img src="images/arquitetura-avivah.avif" alt="Arquitetura da experiência — Avivah" class="case-img" style="width: 100%; height: 320px; object-fit: cover; object-position: top left;" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P8 — MVP
+  ════════════════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s7.eye">Definição do MVP</p>
+        <h2 class="section-title" data-i18n="avivah.s7.h2">Valor percebido, não volume de funcionalidades.</h2>
+        <p class="section-body" data-i18n="avivah.mvp.pb">
+          A definição do MVP foi guiada por critério e priorização — priorizamos o que entregava valor real para ambos os lados do marketplace sem inflar o escopo do lançamento.
+        </p>
+
+        <div class="mvp-grid">
+          <div class="mvp-card">
+            <div class="mvp-card__icon">🔍</div>
+            <div class="mvp-card__title" data-i18n="avivah.mvp.1t">Filtros segmentados</div>
+            <div class="mvp-card__desc" data-i18n="avivah.mvp.o1d">Segmentação por público cristão, tipo de evento e faixa etária — o diferencial que justifica a existência do produto.</div>
+          </div>
+          <div class="mvp-card">
+            <div class="mvp-card__icon">📤</div>
+            <div class="mvp-card__title" data-i18n="avivah.mvp.2t">Compartilhamento simplificado</div>
+            <div class="mvp-card__desc" data-i18n="avivah.mvp.o2d">Integração com WhatsApp, o principal canal de comunicação da comunidade.</div>
+          </div>
+          <div class="mvp-card">
+            <div class="mvp-card__icon">⭐</div>
+            <div class="mvp-card__title" data-i18n="avivah.mvp.3t">Sistema de avaliação</div>
+            <div class="mvp-card__desc" data-i18n="avivah.mvp.o3d">Estrutura inicial de avaliações para construir confiança dentro da comunidade.</div>
+          </div>
+          <div class="mvp-card">
+            <div class="mvp-card__icon">🎨</div>
+            <div class="mvp-card__title" data-i18n="avivah.mvp.4t">Identidade visual consistente</div>
+            <div class="mvp-card__desc" data-i18n="avivah.mvp.o4d">Estrutura visual alinhada à identidade cristã — sem soar genérico ou desconectado da comunidade.</div>
+          </div>
+        </div>
+
+        <div class="mvp-rationale">
+          <p>Também foram definidas <strong data-i18n="avivah.mvp.strong">regras de curadoria</strong> para garantir consistência e qualidade do conteúdo — exclusividade para eventos cristãos, padrões de imagem e controle de qualidade em eventos importados.</p>
+        </div>
+
+
+        <!-- ============================================================
+             📸 IMAGEM — Seção MVP — prints do protótipo, tela do MVP
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/mvp-avivah.png" alt="MVP — Avivah" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P9 — TESTES
+  ════════════════ -->
+  <section class="case-section case-section--alt">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s8.eye">Testes e Validação</p>
+        <h2 class="section-title" data-i18n="avivah.s8.h2">Sessões moderadas orientaram ajustes antes do lançamento.</h2>
+        <p class="section-body" data-i18n="avivah.test.pb">
+          Testamos o protótipo navegável com usuários reais para validar clareza, relevância e percepção do produto. Os feedbacks foram incorporados antes da entrega da primeira versão.
+        </p>
+
+        <div class="test-items">
+          <div class="test-item">
+            <div class="test-item__num">1</div>
+            <div>
+              <div class="test-item__title" data-i18n="avivah.test.1t">Clareza na navegação</div>
+              <div class="test-item__desc">A divisão por categorias específicas (acampamentos, conferências, retiros) foi bem recebida e considerada útil para a jornada de descoberta.</div>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-item__num">2</div>
+            <div>
+              <div class="test-item__title" data-i18n="avivah.test.2t">Relevância dos filtros</div>
+              <div class="test-item__desc">Usuários sinalizaram necessidade de filtros para eventos gratuitos e segmentação mais granular por público — ajuste incorporado antes do lançamento.</div>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-item__num">3</div>
+            <div>
+              <div class="test-item__title" data-i18n="avivah.test.3t">Percepção da proposta</div>
+              <div class="test-item__desc">Feedbacks reforçaram a importância da simplicidade e da identificação com o conteúdo. A percepção geral foi de plataforma "dinâmica e acessível".</div>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-item__num">4</div>
+            <div>
+              <div class="test-item__title" data-i18n="avivah.test.4t">Reação ao nome</div>
+              <div class="test-item__desc">"Incendiando" e "muito necessário" foram reações espontâneas dos usuários ao se deparar com o produto — validando o posicionamento desde o início.</div>
+            </div>
+          </div>
+        
+        <!-- ============================================================
+             📸 IMAGEM — Seção TESTES — prints dos testes, anotações, iterações
+             Como usar:
+             ============================================================ -->
+        <div class="container">
+          <div class="img-wrap">
+            <img src="images/teste-usabilidade-avivah.avif" alt="Testes de usabilidade — Avivah" class="case-img" />
+            <span class="img-wrap__zoom"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>Ver imagem</span>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:var(--space-6);">
+          <a href="https://ybvnt6.axshare.com/" target="_blank" rel="noopener" class="btn btn--solid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Ver protótipo navegável
+          </a>
+          <a href="https://drive.google.com/drive/folders/1bD4x5LKMksExeGwlOlamKa4BNu5Mym6j?usp=drive_link" target="_blank" rel="noopener" class="btn btn--outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Ver testes de usabilidade guiado
+          </a>
+        </div>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ════════════════
+       P10 — APRENDIZADOS
+  ════════════════ -->
+  <section class="case-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-eyebrow" data-i18n="avivah.s9.eye">Aprendizados</p>
+        <h2 class="section-title" data-i18n="avivah.s9.h2">Projetar para comunidades específicas exige mais do que resolver problemas funcionais.</h2>
+
+        <div class="learnings-list">
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="avivah.learn.full1"><strong data-i18n="avivah.learn.1s">Produtos nichados exigem profundidade, não escala genérica.</strong> A tentação de "servir todo mundo" dilui o valor. A especificidade é o diferencial.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="avivah.learn.full2"><strong data-i18n="avivah.learn.2s">Curadoria é parte essencial da experiência.</strong> Em um marketplace de comunidade, o que não está lá importa tanto quanto o que está.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="avivah.learn.full3"><strong data-i18n="avivah.learn.3s">Identidade influencia diretamente a percepção de valor.</strong> O nome, o tom e a identidade visual não são decoração — são parte da proposta de produto.</div>
+          </div>
+          <div class="learning">
+            <div class="learning__dot"></div>
+            <div class="learning__text" data-i18n="avivah.learn.full4"><strong data-i18n="avivah.learn.4s">Decisões estruturais no início impactam toda a evolução do produto.</strong> As regras de curadoria e a arquitetura definidas no MVP criaram a base para crescimento consistente.</div>
+          </div>
+        </div>
+
+        <div class="closing-statement">
+          <p>
+            A Avivah não foi apenas um marketplace — foi a construção de um <strong data-i18n="avivah.final.strong">espaço digital com identidade própria</strong>, onde produto, estratégia e comunidade se encontram.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════ FOOTER ════ -->
+  <div class="case-footer">
+    <div class="container">
+      <div class="case-footer__nav">
+
+        <!-- Anterior -->
+        <div class="case-footer__prev">
+          <span class="case-footer__dir" data-i18n="nav.prev">ANTERIOR</span>
+          <a href="case-forlex.html" class="case-footer__link case-footer__link--prev">
+            ← <span data-i18n="footer.prev.forlex">Forlex</span>
+          </a>
+        </div>
+
+        <!-- Início -->
+        <div class="case-footer__center">
+          <a href="index.html" class="case-footer__home" aria-label="Início">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </a>
+          <span class="case-footer__home-label" data-i18n="nav.home">Início</span>
+        </div>
+
+        <!-- Próximo -->
+        <div class="case-footer__next">
+          <span class="case-footer__dir" data-i18n="nav.next">PRÓXIMO</span>
+          <a href="case-portal.html" class="case-footer__link case-footer__link--next">
+            <span data-i18n="footer.next.portal">Portal do Beneficiário</span> →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    /* ── Cursor ── */
+    (function () {
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      let tx = 0, ty = 0, cx = 0, cy = 0;
+      document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cursor.style.opacity = '1'; });
+      document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+      function tick() {
+        cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12;
+        cursor.style.transform = `translate3d(${cx}px,${cy}px,0)`;
+        requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+
+    /* ── Nav scroll + progress bar ── */
+    const nav = document.getElementById('nav');
+    const bar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      nav.classList.toggle('scrolled', scrolled > 20);
+      if (bar) bar.style.width = `${(scrolled / total) * 100}%`;
+    }, { passive: true });
+
+    /* ── Scroll reveal ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    
+
+    /* ── Lightbox ── */
+    (function() {
+      const lb = document.createElement('div');
+      lb.className = 'lightbox'; lb.id = 'lightbox';
+      lb.innerHTML = '<button class="lightbox__close" id="lbClose" aria-label="Fechar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button><img class="lightbox__img" id="lbImg" src="" alt="" />';
+      document.body.appendChild(lb);
+      const lbImg = document.getElementById('lbImg');
+      const lbClose = document.getElementById('lbClose');
+      document.querySelectorAll('.img-wrap').forEach(wrap => {
+        wrap.addEventListener('click', () => {
+          const img = wrap.querySelector('img');
+          lbImg.src = img.src; lbImg.alt = img.alt;
+          lb.classList.add('active'); document.body.style.overflow = 'hidden'; document.body.classList.add('lightbox-open');
+        });
+      });
+      function close() { lb.classList.remove('active'); document.body.style.overflow = ''; document.body.classList.remove('lightbox-open'); }
+      lbClose.addEventListener('click', close);
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>

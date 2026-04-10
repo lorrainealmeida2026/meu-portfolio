@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mim — Lorraine Almeida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/sobre.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__label">Visitante</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      Início
+    </a>
+    <div style="display:flex;align-items:center;gap:0.75rem">
+        <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="nav__link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <button class="nav__lang" id="langToggle" aria-label="Trocar idioma">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span id="langLabel">ES</span>
+        </button>
+      </div>
+  </nav>
+
+
+  <!-- ══ HERO ══ -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero__inner">
+
+        <!-- Esquerda: bio resumida -->
+        <div>
+          <div class="available-badge" data-i18n="sobre.badge">Disponível para projetos</div>
+          <p class="about-hero__eyebrow">Product Designer</p>
+          <h1 class="about-hero__name">Lorraine<br/>Almeida</h1>
+          <p class="about-hero__role" data-i18n="sobre.role">Product Designer · UX/UI · AI Products · Estratégia de Produto</p>
+          <p class="about-hero__bio">
+            Como designer de produtos, tenho evoluído combinando estudo, prática e projetos que me desafiam a pensar além da estética. Minha meta? Criar experiências que funcionam, encantam e resolvem — tudo com propósito e visão de futuro.
+          </p>
+          <div class="about-hero__actions">
+            <a href="assets/curriculo-lorraine.pdf" download="Curriculo_Lorraine_Almeida.pdf" class="btn btn--solid">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Baixar Currículo
+            </a>
+            <a href="https://www.linkedin.com/in/lorrainealmeidaaraujo/" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="#curriculo" class="btn btn--pink">
+              Ver currículo completo
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Direita: cards flutuantes -->
+        <div class="about-hero__cards">
+          <div class="hero-stat-card hero-stat-card--1">
+            <div class="hero-stat-card__icon">🎯</div>
+            <div>
+              <div class="hero-stat-card__text">Product Designer</div>
+              <div class="hero-stat-card__sub" data-i18n="sobre.c1.sub">UX/UI · AI Products · Estratégia de Produto</div>
+            </div>
+          </div>
+          <div class="hero-stat-card hero-stat-card--2">
+            <div class="hero-stat-card__icon">⚡</div>
+            <div>
+              <div class="hero-stat-card__text" data-i18n="sobre.c2">+4 anos de experiência</div>
+              <div class="hero-stat-card__sub" data-i18n="sobre.c2.sub">Web · Mobile · B2B · B2C</div>
+            </div>
+          </div>
+          <div class="hero-stat-card hero-stat-card--3">
+            <div class="hero-stat-card__icon">🌐</div>
+            <div>
+              <div class="hero-stat-card__text" data-i18n="sobre.c3">Aberta a relocação</div>
+              <div class="hero-stat-card__sub" data-i18n="sobre.c3.sub">Presencial · Híbrido · Remoto</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span data-i18n="sobre.scroll.hint">Currículo</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ══ EXPERIÊNCIA ══ -->
+  <section class="cv-section" id="curriculo">
+    <div class="container">
+      <div class="cv-section__header reveal">
+        <p class="cv-eyebrow" data-i18n="sobre.exp.eyebrow">Experiência</p>
+        <h2 class="cv-title" data-i18n="sobre.exp.title">Onde trabalhei</h2>
+      </div>
+
+      <div class="exp-list reveal">
+
+        <!-- Forlex — atual -->
+        <div class="exp-item exp-item--current">
+          <div>
+            <div class="exp-company">Forlex</div>
+            <div class="exp-role">Product Designer</div>
+            <p class="exp-desc">Sou a designer responsável por toda a experiência do produto, atuando de ponta a ponta: conduzo pesquisas com usuários, defino fluxos, crio protótipos interativos e faço o handoff para o time de desenvolvimento. Participo ativamente da priorização do backlog e do alinhamento estratégico com as áreas de tecnologia e negócios. Como única designer da startup, conecto design, produto e estratégia para garantir que cada entrega gere valor real para o usuário e impulsione o crescimento da Forlex.</p>
+            <div class="exp-tags">
+              <span class="exp-tag" data-i18n="sobre.exp.forlex.tag1">Product Design</span>
+              <span class="exp-tag" data-i18n="sobre.exp.forlex.tag2">UX Research</span>
+              <span class="exp-tag" data-i18n="sobre.exp.forlex.tag3">Prototipagem</span>
+              <span class="exp-tag" data-i18n="sobre.exp.forlex.tag4">Handoff</span>
+            </div>
+          </div>
+          <div class="exp-period exp-period--current" data-i18n="sobre.exp.forlex.period">Set 2024 — Atual</div>
+        </div>
+
+        <!-- ENAP -->
+        <div class="exp-item">
+          <div>
+            <div class="exp-company" data-i18n="sobre.exp.enap.company">ENAP · Consultora (SUPo / UNB)</div>
+            <div class="exp-role">UX Designer</div>
+            <p class="exp-desc">Atuei como consultora de UX Design em projeto da ENAP em parceria com a UNB na CG Dados. Conduzi workshops de ideação e co-criação com equipes multidisciplinares, realizei pesquisas com usuários, análises heurísticas e testes de usabilidade. Ofereci diretrizes sobre boas práticas de UX, garantindo que todas as decisões de design estivessem alinhadas com as necessidades reais dos cidadãos e os objetivos do projeto público.</p>
+            <div class="exp-tags">
+              <span class="exp-tag" data-i18n="sobre.exp.enap.tag1">Gov Tech</span>
+              <span class="exp-tag" data-i18n="sobre.exp.enap.tag2">Workshops</span>
+              <span class="exp-tag" data-i18n="sobre.exp.enap.tag3">Heurística</span>
+            </div>
+          </div>
+          <div class="exp-period" data-i18n="sobre.exp.enap.period">Fev 2024 — Ago 2024</div>
+        </div>
+
+        <!-- E-inscrição -->
+        <div class="exp-item">
+          <div>
+            <div class="exp-company" data-i18n="sobre.exp.einsc.company">E-inscrição</div>
+            <div class="exp-role">Product Designer</div>
+            <p class="exp-desc">Liderei o design do Marketplace da plataforma, com foco em otimizar a jornada de compra e descoberta de eventos. Trabalhei na estruturação e manutenção do Design System, garantindo consistência visual e eficiência na criação de novas interfaces. Participei da definição de processos de design e fluxos de trabalho junto ao time de produto, contribuindo para amadurecer a cultura de design na empresa.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">Marketplace</span>
+              <span class="exp-tag" data-i18n="sobre.exp.einsc.tag2" data-i18n="sobre.cert.ds">Design System</span>
+              <span class="exp-tag" data-i18n="sobre.exp.einsc.tag3" data-i18n="sobre.m.ops">Design Ops</span>
+            </div>
+          </div>
+          <div class="exp-period" data-i18n="sobre.exp.einsc.period">Jan 2024 — Jul 2024</div>
+        </div>
+
+        <!-- TOTVS -->
+        <div class="exp-item">
+          <div>
+            <div class="exp-company">TOTVS</div>
+            <div class="exp-role">Product Designer</div>
+            <p class="exp-desc">Desenvolvi soluções UX/UI web e mobile de ponta a ponta para o ERP RM Saúde e PEP RM. Facilitei workshops de ideação e dinâmicas de co-criação, realizei pesquisas detalhadas e mantive interações próximas com clientes e usuários finais para compreender profundamente as necessidades do setor de saúde. Criei protótipos, conduzi testes de usabilidade e realizei o handoff para o time de desenvolvimento.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">ERP</span>
+              <span class="exp-tag" data-i18n="sobre.exp.totvs.tag1">Health Tech</span>
+              <span class="exp-tag" data-i18n="sobre.exp.totvs.tag2">UX/UI</span>
+            </div>
+          </div>
+          <div class="exp-period" data-i18n="sobre.exp.totvs.period">Out 2021 — Jan 2024</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ══ FORMAÇÃO + CERTIFICAÇÕES ══ -->
+  <section class="cv-section cv-section--alt">
+    <div class="container">
+      <div class="cv-two-col">
+
+        <!-- Formação -->
+        <div class="reveal">
+          <div class="cv-section__header">
+            <p class="cv-eyebrow" data-i18n="sobre.edu.eyebrow">Formação</p>
+            <h2 class="cv-title" data-i18n="sobre.edu.title">Educação</h2>
+          </div>
+          <div class="edu-list">
+            <div class="edu-item edu-item--highlight">
+              <div class="edu-item__header">
+                <div class="edu-school">FIAP</div>
+                <div class="edu-period edu-period--current" data-i18n="sobre.edu.fiap.period">2026 — em andamento</div>
+              </div>
+              <div class="edu-course" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" data-i18n="sobre.edu.fiap.course">MBA — Product Leadership: Product, Growth, Strategy, Portfolio & IA</div>
+            </div>
+            <div class="edu-item">
+              <div>
+                <div class="edu-school" data-i18n="sobre.edu.puc">PUC Minas</div>
+                <div class="edu-course" data-i18n="sobre.edu.puc.course">Pós-Graduação — UX e Design de Produtos Digitais</div>
+              </div>
+              <div class="edu-period" data-i18n="sobre.edu.puc.period">2023 — 2024</div>
+            </div>
+            <div class="edu-item">
+              <div>
+                <div class="edu-school" data-i18n="sobre.edu.fmu">Centro Universitário FMU</div>
+                <div class="edu-course" data-i18n="sobre.edu.fmu.course">Graduação em Marketing</div>
+              </div>
+              <div class="edu-period" data-i18n="sobre.edu.fmu.period">2021 — 2022</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificações -->
+        <div class="reveal">
+          <div class="cv-section__header">
+            <p class="cv-eyebrow" data-i18n="sobre.cert.eyebrow">Certificações</p>
+            <h2 class="cv-title" data-i18n="sobre.cert.title">Cursos</h2>
+          </div>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Design System</div>
+                <div class="cert-school" data-i18n="sobre.cert.1.inst">cfPro</div>
+              </div>
+              <div class="cert-year">2024</div>
+            </div>
+            <div class="cert-item">
+              <div>
+                <div class="cert-name" data-i18n="sobre.cert.front">Conceitos de Front-end</div>
+                <div class="cert-school" data-i18n="sobre.cert.2.inst">Descomplica</div>
+              </div>
+              <div class="cert-year">2023</div>
+            </div>
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Design Ops</div>
+                <div class="cert-school">Alura</div>
+              </div>
+              <div class="cert-year">2023</div>
+            </div>
+            <div class="cert-item">
+              <div>
+                <div class="cert-name" data-i18n="sobre.method.1" data-i18n="sobre.m.dt">Design Thinking</div>
+                <div class="cert-school">Descola</div>
+              </div>
+              <div class="cert-year">2022</div>
+            </div>
+            <div class="cert-item">
+              <div>
+                <div class="cert-name" data-i18n="sobre.cert.ux">Formação UX Design</div>
+                <div class="cert-school" data-i18n="sobre.cert.5.inst">Design Circuit</div>
+              </div>
+              <div class="cert-year">2022</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ══ HABILIDADES ══ -->
+  <section class="cv-section">
+    <div class="container">
+      <div class="cv-section__header reveal">
+        <p class="cv-eyebrow" data-i18n="sobre.skills.eyebrow">Habilidades Técnicas</p>
+        <h2 class="cv-title" data-i18n="sobre.skills.title">O que eu faço bem</h2>
+      </div>
+      <div class="skills-grid reveal" id="skillsGrid">
+        <!-- injetado via JS -->
+      </div>
+
+      <div class="cv-section__header reveal" style="margin-top: var(--space-16)">
+        <p class="cv-eyebrow" data-i18n="sobre.tools.eyebrow">Ferramentas</p>
+        <h2 class="cv-title" data-i18n="sobre.tools.title">Stack</h2>
+      </div>
+      <div class="tools-grid reveal">
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#0acf83"></span>Figma</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#ff3fa4"></span>Hotjar</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#6366f1"></span>Posthog</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#0052cc"></span>Jira</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#1a1a1a"></span>Notion</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#e06b2d"></span>Framer</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#7c3aed"></span>Lovable</div>
+        <div class="tool-chip"><span class="tool-chip__dot" style="background:#d4380d"></span>Claude IA</div>
+      </div>
+
+      <div class="cv-section__header reveal" style="margin-top: var(--space-16)">
+        <p class="cv-eyebrow" data-i18n="sobre.methods.eyebrow">Metodologias</p>
+        <h2 class="cv-title" data-i18n="sobre.methods.title">Como trabalho</h2>
+      </div>
+      <div class="methods-wrap reveal">
+        <span class="method-tag">Design Thinking</span>
+        <span class="method-tag" data-i18n="sobre.method.2">Lean UX</span>
+        <span class="method-tag">UCD</span>
+        <span class="method-tag" data-i18n="sobre.method.3">Scrum</span>
+        <span class="method-tag" data-i18n="sobre.method.4">Kanban</span>
+        <span class="method-tag">Design Ops</span>
+        <span class="method-tag" data-i18n="sobre.method.6">Teste A/B</span>
+        <span class="method-tag" data-i18n="sobre.method.7">Análise Heurística</span>
+        <span class="method-tag" data-i18n="sobre.method.8">Jornada do Usuário</span>
+        <span class="method-tag" data-i18n="sobre.method.9">Co-criação</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="about-cta">
+    <div class="container reveal">
+      <h2 data-i18n="sobre.cta.title">Tem algum projeto?</h2>
+      <p data-i18n="sobre.cta.body">Aberta a projetos, parcerias e conversas sobre produto, estratégia e IA.</p>
+      <div class="about-cta__actions">
+        <a href="https://wa.me/5531920014354" target="_blank" rel="noopener" class="btn btn--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="index.html" class="btn btn--outline">
+          Ver projetos
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-i18n="footer.copy">© 2026 Lorraine Almeida</span>
+      <span data-i18n="footer.made">Feito com cuidado e café ☕</span>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ── Cursor ── */
+    (function () {
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      let tx = 0, ty = 0, cx = 0, cy = 0;
+      document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cursor.style.opacity = '1'; });
+      document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+      function tick() { cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12; cursor.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(tick); }
+      tick();
+    })();
+
+    /* ── Nav scroll ── */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+
+    /* ── Scroll reveal ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    /* ── Skill bars ── */
+    const skills = [
+      { name: 'UX Research',      pct: 92, color: '#6ec6e0' },
+      { name: 'UI Design',         pct: 88, color: '#6b47dc' },
+      { name: 'Prototipagem',      pct: 90, color: '#f0c93a' },
+      { name: 'Product Strategy',  pct: 82, color: '#ff3fa4' },
+      { name: 'Design System',     pct: 85, color: '#2e7d5e' },
+      { name: 'Design Ops',        pct: 75, color: '#1a6fa8' },
+    ];
+    const grid = document.getElementById('skillsGrid');
+    skills.forEach(s => {
+      const el = document.createElement('div');
+      el.className = 'skill-bar-item';
+      el.innerHTML = `
+        <div class="skill-bar-header">
+          <span class="skill-name">${s.name}</span>
+        </div>
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" style="background:${s.color}" data-pct="${s.pct}"></div>
+        </div>`;
+      grid.appendChild(el);
+    });
+
+    /* Anima as barras quando entram na viewport */
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.pct + '%';
+          });
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    barObs.observe(grid);
+
+    /* ── Smooth scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>

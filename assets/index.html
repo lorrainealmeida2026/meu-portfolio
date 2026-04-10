@@ -40,10 +40,9 @@
       <h1 class="hero__name">Lorraine<br/>Almeida</h1>
       <div class="hero__rotator" aria-live="polite">
         <div class="rotator__track" id="rotatorTrack">
-          <span class="rotator__item" data-i18n="hero.rot1">Product Designer</span>
+          <span class="rotator__item" data-i18n="hero.rot1">AI Strategy</span>
           <span class="rotator__item" data-i18n="hero.rot2">AI Product</span>
-          <span class="rotator__item" data-i18n="hero.rot3">Product Strategy</span>
-          <span class="rotator__item" data-i18n="hero.rot4">UX/UI</span>
+          <span class="rotator__item" data-i18n="hero.rot3">UX/UI Product Design</span>
         </div>
       </div>
       <p class="hero__desc" data-i18n="hero.desc">
@@ -79,32 +78,33 @@
 
       <div class="cases-grid">
 
-        <!-- ── CASE 1 — AUTOMAÇÃO JURÍDICA (featured) ── -->
+        <!-- ── CASE 1 — FORLEX (featured) ── -->
         <a href="case-forlex.html" class="case-card case-card--featured reveal"
            style="--card-color:#6b47dc; --card-bg:rgba(107,71,220,0.06)">
           <div class="case-card__body">
             <div class="case-card__top">
-              <div class="case-card__client" data-i18n="index.forlex.client">Forlex</div>
+              <div class="case-card__client">Forlex</div>
               <div class="case-card__tags">
+                <span class="case-card__tag" data-i18n="hero.rot2">AI Product</span>
                 <span class="case-card__tag" data-i18n="index.forlex.tag1">LegalTech</span>
-                <span class="case-card__tag" data-i18n="index.forlex.tag2">Product Strategy</span>
-                <span class="case-card__tag" data-i18n="index.forlex.tag3">Fluxos com IA</span>
+                <span class="case-card__tag">B2B</span>
+                <span class="case-card__tag" data-i18n="index.forlex.tag2">End-to-end</span>
               </div>
-              <h3 class="case-card__title" data-i18n="index.forlex.h3">De automação técnica a fluxos guiados: análise e redirecionamento de produto jurídico com IA</h3>
-              <p class="case-card__desc" data-i18n="index.forlex.p">Investigação do contexto dos usuários que revelou um desalinhamento na solução proposta e levou à redefinição da abordagem antes da execução.</p>
+              <h3 class="case-card__title" data-i18n="index.forlex.h3">Como estruturamos decisões jurídicas com IA sem comprometer a confiabilidade</h3>
+              <p class="case-card__desc" data-i18n="index.forlex.p">Plataforma jurídica inteligente com fluxos guiados e assistente LIVIA — da concepção até produção, priorizando confiabilidade sobre velocidade.</p>
             </div>
             <div class="case-card__bottom">
               <div class="case-card__metrics">
                 <div>
-                  <div class="case-metric__value" data-i18n="index.forlex.metric1">Estratégia</div>
-                  <div class="case-metric__label" data-i18n="index.forlex.metric1label">antes do design</div>
+                  <div class="case-metric__value" data-i18n="index.forlex.32k">+32k</div>
+                  <div class="case-metric__label" data-i18n="index.forlex.users">usuários</div>
                 </div>
                 <div>
-                  <div class="case-metric__value" data-i18n="index.forlex.metric2">Central</div>
-                  <div class="case-metric__label" data-i18n="index.forlex.metric2label">na plataforma</div>
+                  <div class="case-metric__value">3</div>
+                  <div class="case-metric__label" data-i18n="index.forlex.decisions">decisões estratégicas</div>
                 </div>
               </div>
-              <span class="case-card__cta" data-i18n="projects.see">
+              <span class="case-card__cta">
                 Ver case
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </span>
@@ -113,7 +113,7 @@
           <div class="case-card__visual">
             <div class="case-card__visual-inner">
               <div class="case-card__visual-label">
-                <div class="case-card__visual-title" data-i18n="index.forlex.visual">Automação Jurídica</div>
+                <div class="case-card__visual-title">Forlex</div>
               </div>
             </div>
           </div>
@@ -267,42 +267,10 @@
     (function () {
       const track = document.getElementById('rotatorTrack');
       if (!track) return;
-      const items = track.querySelectorAll('.rotator__item');
-      const total = items.length;
-      if (total === 0) return;
-
-      // Clona o primeiro item no final para o loop sem salto
-      track.appendChild(items[0].cloneNode(true));
-
-      let H = 32;
+      const total = track.querySelectorAll('.rotator__item').length;
       let current = 0;
-
-      function next() {
-        current++;
-        track.style.transition = 'transform 600ms cubic-bezier(.4,0,.2,1)';
-        track.style.transform = `translateY(-${current * H}px)`;
-
-        // Ao chegar no clone, salta silenciosamente de volta ao original
-        if (current === total) {
-          setTimeout(() => {
-            track.style.transition = 'none';
-            // Força reflow para garantir que transition:none seja aplicado
-            // antes de mover o transform — evita flash de conteúdo em branco
-            track.getBoundingClientRect();
-            track.style.transform = 'translateY(0)';
-            current = 0;
-          }, 700); // margem extra além dos 600ms da transição
-        }
-      }
-
-      // Duplo requestAnimationFrame garante que a primeira pintura ocorreu
-      // e que offsetHeight retorna o valor real (fontes carregadas)
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          H = items[0].offsetHeight || 32;
-          setTimeout(() => setInterval(next, 2800), 1500);
-        });
-      });
+      function next() { current = (current + 1) % total; track.style.transform = `translateY(-${current * 32}px)`; }
+      setTimeout(() => setInterval(next, 2800), 1000);
     })();
 
     /* ── Nav scroll ── */
